@@ -21,10 +21,10 @@ int main()
   printf("\n");
 
   for(int i=0;i<4;i++){
-    for(int j=0;j<4-1;j++){
-      if(arr[i]>arr[j]){
-        temp=arr[j];
-        arr[j]=arr[i];
+    for(int j=0;j<4-i;j++){
+      if(arr[j]>arr[j+1]){
+        temp=arr[j+1];
+        arr[j+1]=arr[j];
         arr[j]=temp;
 
       }
